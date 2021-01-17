@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Latihan Ujian </title>
+        <script type="text/javascript" src='./latihan.js' async defer></script>
+        <style>
+            table, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+<body>
+
+    <p> <label for="txtMatrix"> Masukkan dimensi matrix</label>
+        <input type="text" id="txtMatrix" />
+        <button onclick="generateSoal(document.getElementById('txtMatrix').value)">buat</button>
+    </p>
+<div id ="matrix1">
+    <h5>Masukkan dimensi matrix 1</h5>
+    <table id="matrix1">
+    <tr>
+        <td> </td>
+        <td> </td>
+    </tr>
+    </table>
+</div>    
+<div id ="matrix2">
+    <h5>Masukkan dimensi matrix 2</h5>
+    <table id="matrix2">
+    <td> </td>
+    <td> </td>
+    </table>
+</div>    
+<div id ="matrixhasil1">
+    <h5>Masukkan dimensi hasil matrix</h5>
+    <td> </td>
+    <td> </td>
+    <button onclick="generateHasil(document.getElementById('txtMatrix').value)">buat</button>
+</div>    
+
+</body>
+
+</html>
